@@ -1,7 +1,6 @@
 #!/usr/bin/perl
 use warnings;
 use strict;
-use IO::File;
 use Carp;
 use FileHandle;
 use Venn::Chart;
