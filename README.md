@@ -12,7 +12,6 @@ Contains:
 <br><strong>Venn-CF.pl</strong><br>
 Script will take two to three VCF files and create a venn diagram of intersections and unique positions.
 Script will also output a histogram of the same results
-
 <br><strong>Region_return.pl</strong><br>
 Script will take .txt outputs from Venn-CF.pl script and create a GFF file of regions in file
 
