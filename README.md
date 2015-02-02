@@ -9,13 +9,6 @@ BioTools - Collection of Bioinformatic tools
 
 Contains:
 
-<ul>
-  <li>Coffee</li>
-  <li>Tea</li>
-  <li>Milk</li>
-</ul>
-
-
 Usage description of each available.
 
 <ul>
