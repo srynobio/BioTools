@@ -1,5 +1,4 @@
-#!/usr/bin/perl
-# Region_return.pl
+#!/usr/bin/env perl
 use strict;
 use warnings;
 use Tabix;
@@ -9,11 +8,9 @@ use Getopt::Long;
 my $usage = "
 
 	Synopsis:
-		./Region_return.pl --venn_results uniq_1.txt --gff_gz ref_GRCh37.gff3.gz --out results.gff
+		./VCF-GFFregion-Return.pl --venn_results uniq_1.txt --gff_gz ref_GRCh37.gff3.gz --out results.gff
 
 	Description:
-
-		Region_return.pl		
 	
 		Script will take .txt outputs from Venn-CF.pl script and create a GFF file of regions in file.
 
