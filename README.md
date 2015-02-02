@@ -9,15 +9,23 @@ BioTools - Collection of Bioinformatic tools
 
 Contains:
 
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+
 Usage description of each available.
 
-<strong>Filter-FreeBayes.pl</strong><br>
-<strong>Filter-GATK.pl</strong><br> 
-<strong>VCF-File-Summary.pl</strong><br>
-<strong>Venn-CF.pl</strong><br>
-<strong>VCF-Region-Return.pl</strong><br>
-<strong>VCF-GFFregion-Return.pl</strong><br>
-
+<ul>
+<li><strong>Filter-FreeBayes.pl</strong><br></li>
+<li><strong>Filter-GATK.pl</strong><br></li>
+<li><strong>VCF-File-Summary.pl</strong><br></li>
+<li><strong>Venn-CF.pl</strong><br></li>
+<li><strong>VCF-Region-Return.pl</strong><br></li>
+<li><strong>VCF-GFFregion-Return.pl</strong><br></li>
+</ul>
 
 <strong>DESCRIPTION</strong>
 
