@@ -11,12 +11,13 @@ Contains:
 
 Usage description of each available.
 
-<br><strong>Filter-FreeBayes.pl</strong><br>
-<br><strong>Filter-GATK.pl</strong><br> 
-<br><strong>VCF-File-Summary.pl</strong><br>
-<br><strong>Venn-CF.pl</strong><br>
-<br><strong>VCF-Region-Return.pl</strong><br>
-<br><strong>VCF-GFFregion-Return.pl</strong><br>
+<strong>Filter-FreeBayes.pl</strong><br>
+<strong>Filter-GATK.pl</strong><br> 
+<strong>VCF-File-Summary.pl</strong><br>
+<strong>Venn-CF.pl</strong><br>
+<strong>VCF-Region-Return.pl</strong><br>
+<strong>VCF-GFFregion-Return.pl</strong><br>
+
 
 <strong>DESCRIPTION</strong>
 
