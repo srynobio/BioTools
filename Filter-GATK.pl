@@ -48,7 +48,7 @@ GetOptions(
 );
 die $usage unless ($vcf and $output);
 
-# set up defaultsi.
+# set up default
 my $type = ($indel) ? 'indel' : 'snp';
 
 open(my $VCF, '<', $vcf);
