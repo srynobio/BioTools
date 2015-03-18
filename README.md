@@ -1,42 +1,45 @@
-&nbsp;
+BioTools 
+--------------------------------------------
 
-<strong>NAME</strong>
-
-BioTools - Collection of Bioinformatic tools
+Collection of Bioinformatic tools
 
 
-<strong>SYNOPSIS</strong>
+SYNOPSIS
+--------
 
 Contains:
 
 Usage description of each available.
 
-<ul>
-<li><strong>Filter-FreeBayes.pl</strong><br></li>
-<li><strong>Filter-GATK.pl</strong><br></li>
-<li><strong>VCF-File-Summary.pl</strong><br></li>
-<li><strong>Venn-CF.pl</strong><br></li>
-<li><strong>VCF-Region-Return.pl</strong><br></li>
-<li><strong>VCF-GFFregion-Return.pl</strong><br></li>
-</ul>
+1. Filter-FreeBayes.pl
+2. Filter-GATK.pl
+3. VCF-File-Summary.pl
+4. Venn-CF.pl
+5. VCF-Region-Return.pl
+6 . VCF-GFFregion-Return.pl
 
-<strong>DESCRIPTION</strong>
+DESCRIPTION
+-----------
 
 Place holder and collection of tool used for bioinformatic work.
 
-<strong>INCOMPATIBILITIES</strong>
+INCOMPATIBILITIES
+------------------
 
 None know, although not tested on Microsoft.
 
-<strong>BUGS AND LIMITATIONS</strong>
+BUGS AND LIMITATIONS
+--------------------
 
 Please report any bugs or feature requests to:
 shawn.rynearson@gmail.com
 
-<strong>AUTHOR</strong>
-Shawn Rynearson &lt;shawn.rynearson@gmail.com&gt;
+AUTHOR
+-------
+Shawn Rynearson: shawn.rynearson@gmail.com
 
-<strong>LICENCE AND COPYRIGHT</strong>
+LICENCE AND COPYRIGHT
+---------------------
 Copyright (c) 2013, Shawn Rynearson &lt;shawn.rynearson@gmail.com&gt;
 All rights reserved.
 
@@ -65,8 +68,4 @@ DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY YOU OR
 THIRD PARTIES OR A FAILURE OF THE SOFTWARE TO OPERATE WITH ANY OTHER
 SOFTWARE), EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF
 THE POSSIBILITY OF SUCH DAMAGES.
-
-&nbsp;
-
-&nbsp;
 
