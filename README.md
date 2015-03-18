@@ -40,7 +40,7 @@ Shawn Rynearson: shawn.rynearson@gmail.com
 
 LICENCE AND COPYRIGHT
 ---------------------
-Copyright (c) 2013, Shawn Rynearson &lt;shawn.rynearson@gmail.com&gt;
+Copyright (c) 2013, Shawn Rynearson shawn.rynearson@gmail.com
 All rights reserved.
 
 This module is free software; you can redistribute it and/or
