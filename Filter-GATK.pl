@@ -20,7 +20,8 @@ Description:
 
 	How VCF file is filtered.
 	1 - Filtered on PASS.
-	2 - All homozygous and no-call genotypes are removed.
+    2 - All duplicated records removed.
+	3 - All homozygous and no-call genotypes are removed.
 		current genotypes kept:
 		0/1, 1/0. 1/1, 0|1, 1|0, 1|1.
 
@@ -54,6 +55,10 @@ my $type = ($indel) ? 'indel' : 'snp';
 open(my $VCF, '<', $vcf);
 open(my $OUT, '>', $output);
 
+(my $dup_file = $output) =~ s/$/.duplicated/;
+open(my $DUP, '>', $dup_file);
+
+my %dupRecord;
 foreach my $line (<$VCF>) {
 	chomp $line;
 
@@ -67,6 +72,14 @@ foreach my $line (<$VCF>) {
 	unless ($np) {
 		next unless ( $parts[6] eq 'PASS');
 	}
+
+    my $record = $parts[0] . ":" . $parts[1];
+    $dupRecord{$record}++;
+
+    if ($dupRecord{$record} >= 2 ) {
+        print $DUP $line, "\n";
+        next;
+    }
 
 	if ( $depth ) {
 		next unless ($parts[5] >= $depth);
