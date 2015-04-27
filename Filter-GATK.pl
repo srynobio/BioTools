@@ -55,10 +55,8 @@ my $type = ($indel) ? 'indel' : 'snp';
 open(my $VCF, '<', $vcf);
 open(my $OUT, '>', $output);
 
-(my $dup_file = $output) =~ s/$/.duplicated/;
-open(my $DUP, '>', $dup_file);
-
 my %dupRecord;
+my %vcfs;
 foreach my $line (<$VCF>) {
 	chomp $line;
 
@@ -72,14 +70,6 @@ foreach my $line (<$VCF>) {
 	unless ($np) {
 		next unless ( $parts[6] eq 'PASS');
 	}
-
-    my $record = $parts[0] . ":" . $parts[1];
-    $dupRecord{$record}++;
-
-    if ($dupRecord{$record} >= 2 ) {
-        print $DUP $line, "\n";
-        next;
-    }
 
 	if ( $depth ) {
 		next unless ($parts[5] >= $depth);
@@ -102,14 +92,16 @@ foreach my $line (<$VCF>) {
 			my @calls = split /\,/, $parts[4];
 			foreach my $alt ( @calls ) {
 				if ( length $alt eq '1' ) {
-					print $OUT $line, "\n";
+                    $vcfs{$line}++;
+                    print $OUT $line, "\n" if ( $vcfs{$line} <= 1);
 					next;
 				}
 				else { next }
 			}
 		}
 		elsif ( length $parts[4] <= 1 ) {
-			print $OUT $line, "\n";
+                    $vcfs{$line}++;
+                    print $OUT $line, "\n" if ( $vcfs{$line} <= 1);
 		}
 	}
 	if ( $type eq 'indel' ) {
@@ -118,14 +110,16 @@ foreach my $line (<$VCF>) {
 			my @calls = split /\,/, $parts[4];
 			foreach my $alt ( @calls ) {
 				if ( length $alt > 1) {
-					print $OUT $line, "\n";
+                    $vcfs{$line}++;
+                    print $OUT $line, "\n" if ( $vcfs{$line} <= 1);
 					next;
 				}
 				else { next }
 			}
 		}
 		elsif ( length $parts[4] > 1 ) {
-			print $OUT $line, "\n";
+                    $vcfs{$line}++;
+                    print $OUT $line, "\n" if ( $vcfs{$line} <= 1);
 		}
 	}
 }
